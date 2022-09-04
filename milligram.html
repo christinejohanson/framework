@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <title>Milligram CSS</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <a class="button" href="index.html">Hem</a>
+        <a class="button" href="bootstrap.html">Bootstrap</a>
+        <a class="button" href="milligram.html">Milligram</a>
+        <a class="button" href="publishing.html">Publicering</a>
+
+
+        <h1>RAMVERK MILLIGRAM</h1>
+        <h2>Om ramverket</h2>
+        <p>Milligram är ett minimalistiskt CSS-ramverk och är gratis att använda. För att komma igång kan man antingen 
+            ladda ner ramverket eller inkludera via CDN. Jag valde att ladda ner och installera via NPM. </p>
+            <a class="button" href="https://milligram.io/">Dokumentation Milligram</a>
+        <h3>Fördelar</h3> 
+        <p>Det är väldigt lätt att komma igång och använda det här ramverket. Det kan vara det perfekta valet av CSS-ramverk om 
+            man vill lite snabbt skapa en webbplats som ser bra ut utan att behöva lägga särskilt mycket tid på layouten. 
+            Själva utseendet på deras webbplats tilltalar mig 
+            och jag får intrycket av att det är ett stilrent och välkomnande ramverk. 
+        </p>  
+        <h3>Nackdelar</h3> 
+        <p>När något är enkelt att använda kan det även betyda att det är svårt att anpassa med egna val av layout. Jag försökte ändra färgen 
+            på knapparna på webbplatsen, men gick bet på att hitta i vilken SASS-fil jag skulle göra det. En till nackdel är att 
+            det syns väl att en sida är skapad med Milligram och då försvinner också originaliteten på webbplatsen. 
+        </p>
+        <div class="row">
+            <div class="column column-75">
+                <h3>Skivor i samlingen</h3>
+                <!--tabell-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Albumnamn</th>
+                            <th>Artist</th>
+                            <th>Utgivningsår</th>
+                            <th>Genre</th>
+                            <th>Beskrivning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vi är människorna våra föräldrar varnade oss för</td>
+                            <td>Hurula</td>
+                            <td>2014</td>
+                            <td>Rock</td>
+                            <td>Hurulas debutalbum</td>
+                        </tr>
+                        <tr>
+                            <td>On the water</td>
+                            <td>Future Islands</td>
+                            <td>2011</td>
+                            <td>Pop</td>
+                            <td>Future Islands tredje album</td>
+                        </tr>
+                        <tr>
+                            <td>Blue banister</td>
+                            <td>Lana del Rey </td>
+                            <td>2021</td>
+                            <td>Pop</td>
+                            <td>Lana del Reys sjätte och mest bejublade album</td>
+                        </tr>
+                        <tr>
+                            <td>När allt är över</td>
+                            <td>Svart Katt</td>
+                            <td>2018</td>
+                            <td>Punk</td>
+                            <td>Riktig punk från Stockholm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-75">
+                <!--formulär-->
+                <h3>Lägg till en skiva</h3>
+                <form>
+                    <fieldset>
+                        <label for="nameField">Albumnamn</label>
+                        <input type="text" id="nameField">
+                        <label for="artistField">Artist</label>
+                        <input type="text" id="artistField">
+                        <label for="yearField">Utgivningsår</label>
+                        <input type="number" id="yearField" placeholder="XXXX">
+                        <label for="ageRangeField">Genre</label>
+                        <select id="ageRangeField">
+                            <option value="0-13">Pop</option>
+                            <option value="14-17">Rock</option>
+                            <option value="18-23">Indiepop</option>
+                            <option value="24+">Klassiskt</option>
+                        </select>
+                        <label for="commentField">Beskrivning</label>
+                        <textarea placeholder="Kort beskrivning av albumet" id="commentField"></textarea>
+                        <div class="float-left">
+                            <input type="checkbox" id="confirmField">
+                            <label class="label-inline" for="confirmField">Jag intygar att skivan tillhör mig och inte
+                                är illegalt nedladdad.</label>
+                        </div>
+                        <div class="float-right">
+                            <input class="button-primary" type="submit" value="Lägg till">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
